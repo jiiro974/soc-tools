@@ -56,13 +56,8 @@ root@cs-Pragma:/# :share
 Share URL: https://app.example.com/liveshare/5a2b...
 Token: ABC-DEF-GHI (expires in 60 min, max 5 guests)
 
-root@cs-Pragma:/# cs-agent tools
-  network   scan, dig, ping, traceroute, netcat, tcpdump
-  system    ps, netstat, df
-  security  openssl, curl
-  intel     whois
-  recon     host
-  crypto    hash
+root@cs-Pragma:/# nmap -sV 10.0.1.0/24
+Starting Nmap 7.95 ...
 ```
 
 ---
@@ -269,7 +264,7 @@ Each project can also be installed individually from its own repository.
      ┌────────▼───────┐
      │   cs-agent     │    ┌───────────┐  ┌──────────┐  ┌──────┐
      │  (container)   │    │ Sentinel  │  │  Patrol  │  │ Iris │
-     │  14 SOC tools  │    │  (vuln)   │  │ (harden) │  │(TIP) │
+     │  PTY + record  │    │  (vuln)   │  │ (harden) │  │(TIP) │
      └────────────────┘    └───────────┘  └──────────┘  └──────┘
 ```
 
